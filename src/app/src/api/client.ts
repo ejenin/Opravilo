@@ -16,7 +16,7 @@ export class Client {
 
     constructor(baseUrl?: string, instance?: AxiosInstance) {
         this.instance = instance ? instance : axios.create();
-        this.baseUrl = baseUrl !== undefined && baseUrl !== null ? baseUrl : "https://localhost:5008";
+        this.baseUrl = baseUrl !== undefined && baseUrl !== null ? baseUrl : process.env.API_ROOT;
     }
 
     /**

@@ -31,8 +31,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiUnitTests", "..\test\Api
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opravilo.API.Gateway", "Opravilo.API.Gateway\Opravilo.API.Gateway.csproj", "{89162617-C46A-40FA-927B-4167DDFECFCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opravilo.Web", "Opravilo.Web\Opravilo.Web.csproj", "{68324035-CB91-42CF-A190-1D31E60CCAEE}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiIntegrationTests", "..\test\ApiIntegrationTests\ApiIntegrationTests.csproj", "{0897D181-6D5A-496A-A897-3EA0FC1576CD}"
 EndProject
 Global
@@ -73,10 +71,6 @@ Global
 		{89162617-C46A-40FA-927B-4167DDFECFCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89162617-C46A-40FA-927B-4167DDFECFCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89162617-C46A-40FA-927B-4167DDFECFCA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{68324035-CB91-42CF-A190-1D31E60CCAEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{68324035-CB91-42CF-A190-1D31E60CCAEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{68324035-CB91-42CF-A190-1D31E60CCAEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{68324035-CB91-42CF-A190-1D31E60CCAEE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0897D181-6D5A-496A-A897-3EA0FC1576CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0897D181-6D5A-496A-A897-3EA0FC1576CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0897D181-6D5A-496A-A897-3EA0FC1576CD}.Release|Any CPU.ActiveCfg = Release|Any CPU

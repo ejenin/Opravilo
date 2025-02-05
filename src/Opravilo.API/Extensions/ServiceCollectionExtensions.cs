@@ -29,7 +29,7 @@ namespace Opravilo.API.Extensions
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IProjectService, ProjectService>();
             services.AddHostedService<MigratorService>();
-            
+
             return services;
         }
         

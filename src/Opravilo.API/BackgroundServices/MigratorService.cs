@@ -24,16 +24,16 @@ namespace Opravilo.API.BackgroundServices
             _logger.LogInformation("Starting migrations... Connection string: {connectionString}", _connectionString);
             var migrator = new DbMigrator(_connectionString);
 
-            try
-            {
-                migrator.MigrateDb();
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error running migrations!");
-                throw;
-            }
-
+            // try
+            // {
+            migrator.MigrateDb();
+            
+            // }
+            // catch (Exception ex)
+            // {
+            //     _logger.LogError(ex, "Error running migrations!");
+            //     throw;
+            // }
             return Task.CompletedTask;
         }
 

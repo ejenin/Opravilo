@@ -48,6 +48,12 @@ namespace Opravilo.API
                 app.UseDeveloperExceptionPage();
             }
             
+            app.UseCors(c => c
+                .SetIsOriginAllowed(_ => true)
+                .AllowAnyHeader()
+                .AllowAnyMethod()
+                .AllowCredentials());
+            
             app.UseSwagger();
             app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Opravilo.API v1"));
 
