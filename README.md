@@ -19,7 +19,8 @@ docker compose up
 ```
 
 To build frontend image:
-in app directory:
+
+In app directory:
 ```
 docker build . --tag opravilo.web
 ```
