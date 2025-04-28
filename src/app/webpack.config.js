@@ -1,5 +1,6 @@
 const path = require('path');
 const htmlWebpackPlugin = require('html-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
     entry: './src/index.tsx',
@@ -62,15 +63,26 @@ module.exports = {
     
     plugins: [
         new htmlWebpackPlugin({
-            filename: "../index.html",
+            filename: "../public/index.html",
             title: "Development",
             template: "templates/template.html"
-        })
+        }),
+        new Dotenv(),
     ],
+
+    devServer: {
+        static: {
+          directory: path.join(__dirname, 'public'),
+        },
+        compress: true,
+        port: 9000,
+        open: true,
+        historyApiFallback: true,
+      },
     
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, '../wwwroot/public'),
+        path: path.resolve(__dirname, 'public'),
         clean: true
     },
 };

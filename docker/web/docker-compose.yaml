@@ -1,0 +1,7 @@
+version: "3.9"
+
+services:
+  opravilo.web:
+    image: opravilo.web
+    ports:
+      - "127.0.0.1:9000:9000"

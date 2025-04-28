@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  opravilo.api:
+    image: opravilo.api
+    environment:
+      ConnectionStrings__Opravilo: "Server=postgres:5432;Database=opravilo;User Id=postgres;Password=2282;"
+    ports:
+      - "127.0.0.1:8080:80"
+    networks:
+      - db-development
+
+    
+networks:
+  db-development:
+    external:
+      name: db-development

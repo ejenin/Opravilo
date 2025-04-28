@@ -41,6 +41,9 @@
 
     <ItemGroup>
       <Content Remove="logs\**" />
+      <Content Include="..\..\docker\api\Dockerfile">
+        <Link>Dockerfile</Link>
+      </Content>
     </ItemGroup>
 
     <ItemGroup>
